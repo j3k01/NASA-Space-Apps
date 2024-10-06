@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 25px;
+    left: 52%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    background: rgba(6, 33, 60, 0.8);
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+}
+
+button:before, button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    border: 2px solid transparent;
+    transition: all 0.6s cubic-bezier(0.05, 3, 1, 1) 0s;
+}
+
+button:before {
+    left: 0;
+    border-right: 0;
+}
+
+button:after {
+    right: 0;
+    border-left: 0;
+}
+
+button:hover {
+    background: rgba(6, 33, 60, 0.4);
+}
+
+button:hover:before, button:hover:after {
+    border-color: #1ae3de #498399;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+button.play-music {
+    position: absolute;
+    top: -400px; 
+    left: 500px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 30px; 
+    height: 30px;
+    cursor: pointer;
+}
+
+button.play-music:hover {
+    transform: scale(1.1);
+}

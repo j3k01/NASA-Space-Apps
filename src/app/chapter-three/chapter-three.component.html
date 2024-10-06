@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="image-section" *ngIf="currentState === 'image1'">
+      <img class="image" src="assets/chap3s1.png" alt="First Image">
+    </div>
+  
+    <div class="image-section" *ngIf="currentState === 'video'">
+      <video class="video" autoplay muted loop controls>
+        <source src="assets/chap3s2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  
+    <div class="image-section" *ngIf="currentState === 'image2'">
+      <img class="image" src="assets/chap3s3.png" alt="Second Image">
+    </div>
+  
+    <div class="button-section">
+      <button class="next-button" (click)="goToNextChapter()">Dalej</button>
+    </div>
+  </div>
+  
