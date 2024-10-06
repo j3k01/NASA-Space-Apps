@@ -22,9 +22,7 @@ export class ChapterTwoComponent implements AfterViewInit {
     this.textAnimator.start();
   }
 
-
   goToNextChapter() {
     this.router.navigate(['/chapterTwoThree']);
   }
-  
 }

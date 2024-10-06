@@ -48,7 +48,7 @@ export class PlanetComponent implements OnInit {
     this.scene.add(darkPlane);
 
     const video = document.createElement('video');
-    video.src = 'assets/stars.mp4';
+    video.src = 'assets/starfield.mp4';
     video.loop = true;
     video.muted = true;
     video.play();

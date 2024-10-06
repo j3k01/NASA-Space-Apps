@@ -24,6 +24,7 @@ export class ChapterFourComponent {
 
   startImageVideoCycle(): void {
     const soundImage1 = new Audio('/assets/ch4p1.mp3');
+    const soundImage2 = new Audio('/assets/ch4p3.mp3');
   
     if (this.currentState === 'image1') {
       soundImage1.play();
@@ -32,6 +33,8 @@ export class ChapterFourComponent {
       this.currentState = 'video';
       setTimeout(() => {
         this.currentState = 'image2';
+        soundImage2.play();
+        clearInterval(this.intervalId);
       }, 5000);
   
     }, 13000);
@@ -48,7 +51,9 @@ export class ChapterFourComponent {
     this.textAnimator.start();
   }
 
-  goToNextChapter(){}
+  goToNextChapter(){
+    this.router.navigate(["/chapterFive"])
+  }
 
   ngOnDestroy(): void {
     if (this.intervalId) {

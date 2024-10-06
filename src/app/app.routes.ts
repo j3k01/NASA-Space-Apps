@@ -6,6 +6,9 @@ import { ChapterTwoThreeComponent } from './chapter-two-three/chapter-two-three.
 import { ChapterBefThreeComponent } from './chapter-bef-three/chapter-bef-three.component'; 
 import { ChapterThreeComponent } from './chapter-three/chapter-three.component'; 
 import { ChapterFourComponent } from './chapter-four/chapter-four.component'; 
+import { ChapterFiveComponent } from './chapter-five/chapter-five.component'; 
+import { ChapterSixComponent } from './chapter-six/chapter-six.component'; 
+import { ChapterSevenComponent } from './chapter-seven/chapter-seven.component'; 
 import { PreChapter01Component } from './pre-chapter01/pre-chapter01.component';
 import { PreChapter00Component } from './pre-chapter00/pre-chapter00.component';
 
@@ -19,5 +22,8 @@ export const routes: Routes = [
     { path: 'chapterBefThree', component: ChapterBefThreeComponent },
     { path: 'chapterThree', component: ChapterThreeComponent },
     { path: 'chapterFour', component: ChapterFourComponent },
+    { path: 'chapterFive', component: ChapterFiveComponent },
+    { path: 'chapterSix', component: ChapterSixComponent },
+    { path: 'chapterSeven', component: ChapterSevenComponent },
   ];
   
