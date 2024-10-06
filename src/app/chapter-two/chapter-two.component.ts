@@ -24,7 +24,7 @@ export class ChapterTwoComponent implements AfterViewInit {
 
 
   goToNextChapter() {
-    this.router.navigate(['/chapterThree']);
+    this.router.navigate(['/chapterTwoThree']);
   }
   
 }

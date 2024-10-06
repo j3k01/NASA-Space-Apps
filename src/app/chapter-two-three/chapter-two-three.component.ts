@@ -24,5 +24,7 @@ export class ChapterTwoThreeComponent {
     this.textAnimator.start();
   }
 
-  goToNextChapter(){}
+  goToNextChapter(){
+    this.router.navigate(["/chapterBefThree"])
+  }
 }
